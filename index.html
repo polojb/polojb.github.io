@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
@@ -18,7 +18,50 @@
             </ul>
         </div>
     </nav>
-    
+    <nav id="hamburger-nav">
+        <div class="logo">Jaxon Polo</div>
+        <div hamburger-menu>
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a  href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Jaxon Polo profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jaxon Polo</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                alt="My Linkedin profile"
+                class="icon" 
+                onclick="location.href='https://linkedin.com/'"
+                />
+                <img src="./assets/github.png"
+                alt="My GitHub profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+                />
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
