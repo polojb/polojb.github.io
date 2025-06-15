@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 1 WAPH</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div class="navbar-text fw-bold fs-3">Jaxon Polo</div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="waph.html">WAPH</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div id="cookieMessage"></div>
+        <main class="container my-5 px-4">
+            <div id="functionaliy" class="container">
+                <div class="border border-dark bg-light text-center rounded-5 px-5 py-5 mb-4">
+                    <div id="email" onclick="showhideEmail()"><h3>Click to show my email</h3></div>
+                </div>
+                <div class="row mb-4 gap-4">
+                    <div class="col border border-dark bg-light text-center rounded-5 px-5 py-5">
+                        <h3>Digial Clock</h3>
+                        <div id="digit-clock"></div>
+                    </div>
+                    <div class="col border border-dark bg-light text-center rounded-5 px-5 py-5">
+                        <h3>Analog Clock</h3>
+                        <canvas id="analog-clock" width="150" style="background-color: #999"></canvas>
+                    </div>
+                    <div class="col border border-dark bg-light text-center rounded-5 px-5 py-5">
+                        <h3>Guess Age</h3>
+                        <input name="data" id="data" placeholder="Enter your name" class="rounded-pill px-3 text-center">
+                        <button id="guessButton" class="rounded-pill px-3 mt-3 text-center">Guess Age</button>
+                        <div id="response-age" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="API" class="container">
+                <div class="row gap-4">
+                    <div class="col border border-dark bg-light text-center rounded-5 px-5 py-5">
+                        <h3>Joke API</h3>
+                        <div id="response">Loading...</div>
+                        <p class="fw-light mt-3"><em>Disclaimer: Jokes provided by JokeAPI. I am not responsible for their content.</em></p>
+                    </div>
+                    <div class="col border border-dark bg-light text-center rounded-5 px-5 py-5">
+                        <h3>Weather API</h3>
+                        <input type="text" id="cityInput" placeholder="Enter city" class="rounded-pill text-center px-3 mb-3 mt-3"/>
+                        <button id="getWeather" class="rounded-pill px-3 mb-3">Get Weather</button>
+                        <div id="weatherResult"></div>
+                        <p class="fw-light mt-3"><em>Disclaimer: Weather data provided by OpenWeather. I am not responsible for their content.</em></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class=" container-fluid bg-light">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-none text-body" href="index.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-none text-body" href="waph.html">WAPH</a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <p>Coppright &#169;2025 Jaxon Polo. All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://waph-phung.github.io/clock.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>
